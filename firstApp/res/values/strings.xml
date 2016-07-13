@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">firstApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="main_index">首页</string>
+    <string name="main_discover">发现</string>
+    <string name="main_friend">朋友圈</string>
+    <string name="main_profile">我的</string>
+    <string name="index_title_choiceness">精选</string>
+    <string name="index_title_costume">服饰</string>
+    <string name="index_title_beauty">美装</string>
+    <string name="index_title_homelife">生活家居</string>
+    <string name="index_title_infantmom">母婴</string>
+    <string name="index_title_ranklist">排行榜</string>
+    <string name="index_title_interest">爱好</string>
+    <string name="title_activity_search">firstApp</string>
+
+</resources>

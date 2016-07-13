@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#ffc4e1ff" >
+    
+    <RadioGroup 
+        android:orientation="horizontal" 
+        android:id="@+id/index_title_group" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center">
+
+        <RadioButton 
+            android:textSize="10.0dip" 
+            android:gravity="center"
+            android:id="@+id/index_title_choiceness" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:checked="true" 
+            android:button="@null" 
+            android:text="@string/index_title_choiceness" 
+            android:layout_weight="1.0" />
+
+        <RadioButton 
+            android:textSize="10.0dip" 
+            android:gravity="center"
+            android:id="@+id/index_title_costume" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:button="@null" 
+            android:text="@string/index_title_costume" 
+            android:layout_weight="1.0" />
+
+        <RadioButton 
+            android:textSize="10.0dip" 
+            android:gravity="center"
+            android:id="@+id/index_title_beauty" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:button="@null" 
+            android:text="@string/index_title_beauty" 
+            android:layout_weight="1.0" />
+
+        <RadioButton 
+            android:textSize="10.0dip" 
+            android:gravity="center"
+            android:id="@+id/index_title_homelife" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:button="@null" 
+            android:text="@string/index_title_homelife" 
+            android:layout_weight="1.0" />
+
+        <RadioButton 
+            android:textSize="10.0dip" 
+            android:gravity="center"
+            android:id="@+id/index_title_infantmom" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:button="@null" 
+            android:text="@string/index_title_infantmom" 
+            android:layout_weight="1.0" />
+
+        <RadioButton 
+            android:textSize="10.0dip" 
+            android:gravity="center"
+            android:id="@+id/index_title_rankinglist" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:button="@null" 
+            android:text="@string/index_title_ranklist" 
+            android:layout_weight="1.0" />
+
+        <RadioButton 
+            android:textSize="10.0dip" 
+            android:gravity="center"
+            android:id="@+id/index_title_interest" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:button="@null" 
+            android:text="@string/index_title_interest" 
+            android:layout_weight="1.0" />
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+   	<RadioGroup
+       	android:id="@+id/main_bottom_group"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:layout_gravity="center"
+       	android:orientation="horizontal"
+       	android:background="@drawable/home_tab_top_line"
+       	android:weightSum="4">
+
+       	<RadioButton
+           	android:id="@+id/bottom_btn_index"
+           	android:layout_width="0dp"
+           	android:layout_height="wrap_content"
+           	android:layout_gravity="center"
+           	android:layout_weight="1"
+           	android:background="@android:color/transparent"
+           	android:button="@null"
+           	android:checked="true"
+           	android:drawableTop="@drawable/main_bottom_index_seleor"
+           	android:gravity="center_horizontal|bottom"
+           	android:text="@string/main_index"
+           	android:textColor="@drawable/main_bottom_text_color" />
+       
+       	<RadioButton
+           	android:id="@+id/bottom_btn_discover"
+           	android:layout_width="0dp"
+           	android:layout_height="wrap_content"
+           	android:layout_gravity="center"
+           	android:layout_weight="1"
+           	android:background="@android:color/transparent"
+           	android:button="@null"
+           	android:drawableTop="@drawable/main_bottom_discover_selector"
+           	android:gravity="center_horizontal|bottom"
+           	android:text="@string/main_discover"
+           	android:textColor="@drawable/main_bottom_text_color" />
+       
+       	<RadioButton
+           	android:id="@+id/bottom_btn_friend"
+           	android:layout_width="0dp"
+           	android:layout_height="wrap_content"
+           	android:layout_gravity="center"
+           	android:layout_weight="1"
+           	android:background="@android:color/transparent"
+           	android:button="@null"
+           	android:drawableTop="@drawable/main_bottom_friend_selector"
+           	android:gravity="center_horizontal|bottom" 
+           	android:text="@string/main_friend"
+           	android:textColor="@drawable/main_bottom_text_color" />
+       
+       	<RadioButton
+           	android:id="@+id/bottom_btn_profile"
+           	android:layout_width="0dp"
+           	android:layout_height="wrap_content"
+           	android:layout_gravity="center"
+           	android:layout_weight="1"
+           	android:background="@android:color/transparent"
+           	android:button="@null"
+           	android:drawableTop="@drawable/main_bottom_profile_selector"
+           	android:gravity="center_horizontal|bottom"
+           	android:text="@string/main_profile"
+           	android:textColor="@drawable/main_bottom_text_color" />
+			
+	</RadioGroup>
+    
+</LinearLayout>

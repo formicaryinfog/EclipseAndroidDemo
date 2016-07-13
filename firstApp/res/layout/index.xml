@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:orientation="horizontal" 
+        android:id="@+id/rl" 
+        android:layout_width="fill_parent" 
+        android:layout_height="50.0dip">
+
+        <ImageView 
+            android:id="@+id/iv" 
+            android:layout_width="25.0dip" 
+            android:layout_height="25.0dip" 
+            android:layout_marginLeft="10.0dip" 
+            android:src="@drawable/icon_search" 
+            android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true" 
+            android:onClick="search" />
+
+        <TextView 
+            android:textSize="20.0dip" 
+            android:id="@+id/txt" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="社区精选" 
+            android:layout_centerHorizontal="true" 
+            android:layout_centerVertical="true" />
+
+        <TextView 
+            android:id="@+id/txt1" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="10.0dip" 
+            android:text="签到抽奖" 
+            android:layout_alignParentRight="true" 
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+    
+    <include 
+        android:id="@+id/index_titlebar"  
+        android:layout_width="fill_parent"  
+        android:layout_height="30dp"  
+        layout="@layout/index_titlebar" />  
+        
+   <LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent"
+        android:weightSum="7" 
+        android:layout_height="5.0dip">
+
+        <TextView 
+	        android:id="@+id/index_title_show1" 
+	        android:background="#ff00aa00" 
+	        android:layout_width="0.0dip" 
+	        android:layout_height="fill_parent" 
+	        android:layout_weight="1.0" />
+
+	    <TextView 
+	        android:id="@+id/index_title_show2" 
+	        android:background="#ffffffff" 
+	        android:layout_width="0.0dip" 
+	        android:layout_height="fill_parent" 
+	        android:layout_weight="1.0" />
+	
+	    <TextView 
+	        android:id="@+id/index_title_show3" 
+	        android:background="#ffffffff" 
+	        android:layout_width="0.0dip" 
+	        android:layout_height="fill_parent" 
+	        android:layout_weight="1.0" />
+	
+	    <TextView 
+	        android:id="@+id/index_title_show4" 
+	        android:background="#ffffffff" 
+	        android:layout_width="0.0dip" 
+	        android:layout_height="fill_parent" 
+	        android:layout_weight="1.0" />
+	
+	    <TextView 
+	        android:id="@+id/index_title_show5" 
+	        android:background="#ffffffff" 
+	        android:layout_width="0.0dip" 
+	        android:layout_height="fill_parent" 
+	        android:layout_weight="1.0" />
+	
+	    <TextView 
+	        android:id="@+id/index_title_show6" 
+	        android:background="#ffffffff" 
+	        android:layout_width="0.0dip" 
+	        android:layout_height="fill_parent" 
+	        android:layout_weight="1.0" />
+	
+	    <TextView 
+	        android:id="@+id/index_title_show7" 
+	        android:background="#ffffffff" 
+	        android:layout_width="0.0dip" 
+	        android:layout_height="fill_parent" 
+	        android:layout_weight="1.0" />
+
+    </LinearLayout>
+        
+    <android.support.v4.view.ViewPager 
+        android:id="@+id/index_viewpager" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
