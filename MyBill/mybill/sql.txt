@@ -1,0 +1,47 @@
+create table user(
+id integer primary key autoincrement,
+username varchar(20),
+property real default 0.00,
+update_time datetime default (datetime('now', 'localtime')),
+create_time datetime default (datetime('now', 'localtime'))
+);
+
+insert into user(username) values('formicary');
+insert into user(username, property) values('formicary', 1.23);
+insert into user(username, property) values('formicary', -2.45);
+
+SELECT property from user where id = 1;
+
+create table account(
+id integer primary key autoincrement,
+uid integer not null,
+budget_type integer not null,
+money real default 0.00,
+type varchar(20),
+remark varchar(100),
+create_time datetime  default (datetime('now','localtime'))
+);
+
+insert into account(uid, budget_type, money, type, remark) values(1, 0, 100, '校园卡', '');
+insert into account(uid, budget_type, money, type, remark) values(1, 1, 50, '工资', '第一个月');
+
+SELECT * from account where create_time >= date('now','start of month') order by create_time desc;
+SELECT * from account where create_time >= date('now','start of year');
+SELECT * from account where create_time >= date('now','start of month') and budget_type = 0;
+SELECT * from account where create_time >= date('now','start of month') and budget_type = 1;
+SELECT uid, budget_type, money, type, remark, date(create_time) from account where create_time >= date('now','start of month') order by create_time desc;
+
+
+String sqlstr = "create table user(id integer primary key autoincrement," +
+				" username varchar(20), property real default 0.00, " +
+				"update_time datetime default (datetime('now', 'localtime')), " +
+				"create_time datetime default (datetime('now', 'localtime')));" +
+				"create table account(id integer primary key autoincrement, " +
+				"uid integer not null,budget_type integer not null," +
+				"money real default 0.00,type varchar(20)," +
+				"remark varchar(100)," +
+				"create_time datetime  default (datetime('now','localtime')));"	+
+				"insert into user(username) values('formicary');" +
+				"insert into account(uid, budget_type, money, type, remark) values(1, 0, 100, '校园卡', '');" +
+				"insert into account(uid, budget_type, money, type, remark) values(1, 1, 50, '工资', '第一个月');"
+				;

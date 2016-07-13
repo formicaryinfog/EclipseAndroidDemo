@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyBill</string>
+    <string name="property">净资产</string>
+    <string name="income_month">月收入</string>
+    <string name="expense_month">月支出</string>
+    <string name="income">收入</string>
+    <string name="expense">支出</string>
+    <string name="keep_accounts">记账</string>
+    <string name="account">账单</string>
+    <string name="get_back">返回</string>
+    <string name="edit_budget">记一笔</string>
+    <string name="commit">提交</string>
+    <string name="rmb"> ¥</string>
+	<string name="hint_amount">0.00 </string>
+    <string name="action_settings">Settings</string>
+
+</resources>

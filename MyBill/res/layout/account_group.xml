@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="2,3">
+
+    <TableRow>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:src="@drawable/money2" />
+        
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2016年6月" 
+            android:gravity="center" />
+        
+        <TextView
+            android:id="@+id/expense"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="支出:1000" 
+            android:gravity="center" />
+        
+        <TextView
+            android:id="@+id/income"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="收入:1000" 
+            android:gravity="center" />
+        
+    </TableRow>
+
+</TableLayout>
