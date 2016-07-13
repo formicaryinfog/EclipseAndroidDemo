@@ -1,3 +1,3 @@
 # EclipseAndroidDemo
 EclipseAndroidDemo
-Android Demo 使用eclipse
+练习Android时写的demo
